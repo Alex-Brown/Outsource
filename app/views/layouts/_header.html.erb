@@ -25,6 +25,9 @@
         <% end %>
       </li>
       <% if user_signed_in? %>
+      <li>
+        <%= link_to 'New Pin', new_pin_path %>
+      </li>
         <li>
           <%= link_to edit_user_registration_path do %>
             <span class="glyphicon glyphicon-cog"></span> Account Settings
