@@ -26,7 +26,9 @@
       </li>
       <% if user_signed_in? %>
       <li>
-        <%= link_to 'New Pin', new_pin_path %>
+        <%= link_to new_pin_path do %>
+          <span class="glyphicon glyphicon-pushpin"></span> New Pin
+        <% end %>
       </li>
         <li>
           <%= link_to edit_user_registration_path do %>
